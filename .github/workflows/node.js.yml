@@ -29,6 +29,12 @@ jobs:
         
       - name: NPM build Angular Production
         run: npm run build:prod
+        
+      - name: Debug SSH Access
+        run: |
+          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ubuntu@ec2-43-205-178-112.ap-south-1.compute.amazonaws.com
+        continue-on-error: true
+        
       - name: Deploy to my EC2 instance
         uses: easingthemes/ssh-deploy@v2.1.5
         with:
