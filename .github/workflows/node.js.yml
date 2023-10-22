@@ -41,7 +41,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.5
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY}}
-          SOURCE: "dist/tiffsy/"
+          SOURCE: "dist/tiffsy-web/"
           REMOTE_HOST: "ec2-43-205-178-112.ap-south-1.compute.amazonaws.com"
           REMOTE_USER: "ubuntu"
-          TARGET: "/var/www/html/tiffsy/"
+          TARGET: "/var/www/html/tiffsy-web/"
