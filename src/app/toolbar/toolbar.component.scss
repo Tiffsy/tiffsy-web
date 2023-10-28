@@ -1,0 +1,19 @@
+.toolbar {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    font-family: 'Inter';
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.toolbar-icon {
+    transform: scale(2.7);
+}
+.toolbar-button-left {
+    margin-right: 2vw;
+}
+
+.toolbar-button-right {
+    margin-left: 2vw; 
+}
