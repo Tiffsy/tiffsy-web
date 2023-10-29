@@ -4,6 +4,13 @@
     align-items: center;
 }
 
+.image {
+    width: 16vw; 
+    aspect-ratio: 1/1; 
+    object-fit: cover; 
+    border-radius: 12px;
+}
+
 .title{
     font-family:'Inter';
     font-size: medium; 
@@ -16,4 +23,5 @@
     font-size: small; 
     font-weight: 400;
     max-width: 16vw;
+    text-align: center;
 }

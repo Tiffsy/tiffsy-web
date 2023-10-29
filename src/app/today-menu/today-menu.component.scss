@@ -1,3 +1,19 @@
+.section {
+    background-image: url(../../assets/images/dashboard_img_2.png);
+    background-repeat: no-repeat; 
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    position: relative;
+}
+
+
 .heading {
     font-family: 'Merriweather'; 
     font-size: xx-large; 
@@ -10,14 +26,6 @@
 .button {
     margin-top: 2vh;
     padding:3vh 2.5vw 3vh 2.5vw  !important;
-}
-
-.description {
-    font-family:'Inter';
-    font-size: medium; 
-    font-weight: 400;
-    max-width: 16vw;
-    padding-top: 2vh;
 }
 
 .explore-button {
