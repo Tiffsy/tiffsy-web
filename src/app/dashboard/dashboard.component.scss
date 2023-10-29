@@ -1,0 +1,34 @@
+.heading {
+    font-family: 'Merriweather'; 
+    font-size: xx-large; 
+    font-weight: bold;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    text-align: center;
+}
+
+.button {
+    margin-top: 2vh;
+    padding:3vh 2.5vw 3vh 2.5vw  !important;
+}
+
+.description {
+    font-family:'Inter';
+    font-size: medium; 
+    font-weight: 400;
+    max-width: 16vw;
+    padding-top: 2vh;
+}
+
+.cards-layout {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.explore-button {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 5vh;
+}
