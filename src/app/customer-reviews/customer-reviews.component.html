@@ -1,0 +1,19 @@
+<div class="heading">Hear from Our Customers</div>
+<div class="scroll-container">
+    <div class="scroll-button pull-left">
+        <mat-icon (click)="scrollLeft()">keyboard_arrow_left</mat-icon>
+    </div>  
+    <div #widgetsContent class="custom-slider-main" style="padding-top: 5vh; padding-bottom: 5vh;">
+        <ng-container *ngFor="let customer of customerList">
+            <app-customer-review-card 
+                image_name="{{customer.imageName}}" 
+                customer_name="{{customer.customerName}}"
+                designation="{{customer.designation}}"
+                review="{{customer.review}}">
+            </app-customer-review-card>
+        </ng-container>
+    </div>
+    <div class="pull-right scroll-button">
+        <mat-icon (click)="scrollRight()">keyboard_arrow_right</mat-icon>
+    </div>
+</div>

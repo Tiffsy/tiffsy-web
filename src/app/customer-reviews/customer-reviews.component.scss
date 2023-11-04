@@ -1,0 +1,47 @@
+.custom-slider-main{
+    display: flex;
+    overflow: hidden;  
+    scroll-behavior: smooth;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    // width: 100vw;
+    box-sizing: border-box;
+    left: 0
+}
+
+.pull-left {
+    float: left;
+    top: 50%;
+
+}
+
+.pull-right {
+    float: right;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center; /* Vertically center the buttons with the cards */
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.scroll-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.heading {
+    font-family: 'Merriweather'; 
+    font-size: xx-large; 
+    font-weight: bold;
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
