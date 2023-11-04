@@ -1,0 +1,94 @@
+.outer-div {
+    background-color: #FFFAEC;;
+    height: 60vh;
+    width: 100vw;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    padding: 12vh 0vw 5vh 10vw;
+}
+
+.top-div {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.bottom-div {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    max-width: 80vw;
+}
+
+.top-left-div {
+    float: right;
+}
+.top-right-div {
+    float: left;
+    margin-right: 6vw;
+}
+.bottom-left-div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+.app-icon-background {
+    width: 150px;
+    height: 150px;
+    background-color: #FFBE1D; 
+    border-radius: 50%; 
+}
+
+.description {
+    font-family:'Inter';
+    font-size: 15px; 
+    font-weight: 400;
+    max-width: 19vw;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+td {
+    text-align: left;
+    width: 20vw;
+}
+
+.email-input {
+    background-color: #FFFAEC;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-bottom: 10.5px;
+    border-color: #A6A6A6;
+    border-right-color: #FFBE1D;
+    width: 13vw;
+    padding-left: 1vw;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.mat-mdc-unelevated-button:not(:disabled) {
+    border-radius: 0 4px 4px 0;
+}
+
+.bottom-left-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-icon {
+    width: 9vw;
+    height: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.social-icon-background {
+    background-color: #FFBE1D; 
+    border-radius: 50%; 
+    padding: 0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}

@@ -17,6 +17,7 @@ import { DownloadTiffsyComponent } from './download-tiffsy/download-tiffsy.compo
 import { CustomerReviewCardComponent } from './customer-review-card/customer-review-card.component';
 import { CustomerReviewsComponent } from './customer-reviews/customer-reviews.component';
 import { OrderNowHomepageComponent } from './order-now-homepage/order-now-homepage.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { OrderNowHomepageComponent } from './order-now-homepage/order-now-homepa
     DownloadTiffsyComponent,
     CustomerReviewCardComponent,
     CustomerReviewsComponent,
-    OrderNowHomepageComponent
+    OrderNowHomepageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
