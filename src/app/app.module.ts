@@ -18,6 +18,7 @@ import { CustomerReviewCardComponent } from './customer-review-card/customer-rev
 import { CustomerReviewsComponent } from './customer-reviews/customer-reviews.component';
 import { OrderNowHomepageComponent } from './order-now-homepage/order-now-homepage.component';
 import { FooterComponent } from './footer/footer.component';
+import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     CustomerReviewCardComponent,
     CustomerReviewsComponent,
     OrderNowHomepageComponent,
-    FooterComponent
+    FooterComponent,
+    BottomBarComponent
   ],
   imports: [
     BrowserModule,
