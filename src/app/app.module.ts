@@ -16,6 +16,7 @@ import { TodayMenuComponent } from './today-menu/today-menu.component';
 import { DownloadTiffsyComponent } from './download-tiffsy/download-tiffsy.component';
 import { CustomerReviewCardComponent } from './customer-review-card/customer-review-card.component';
 import { CustomerReviewsComponent } from './customer-reviews/customer-reviews.component';
+import { OrderNowHomepageComponent } from './order-now-homepage/order-now-homepage.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CustomerReviewsComponent } from './customer-reviews/customer-reviews.co
     TodayMenuComponent,
     DownloadTiffsyComponent,
     CustomerReviewCardComponent,
-    CustomerReviewsComponent
+    CustomerReviewsComponent,
+    OrderNowHomepageComponent
   ],
   imports: [
     BrowserModule,
