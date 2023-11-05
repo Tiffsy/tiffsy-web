@@ -47,4 +47,17 @@
     padding-top: 8vh;
     padding-bottom: 2vh;
     text-align: center;
+    align-self: center;
+}
+
+.outer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .heading {
+        max-width: 60vw;
+    }
 }
