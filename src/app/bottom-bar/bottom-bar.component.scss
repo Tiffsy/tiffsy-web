@@ -18,3 +18,10 @@
 a {
     cursor: pointer;
 }
+
+@media (max-width: 450px) {
+    .toolbar-button {
+        font-size: 10px;
+        font-weight: 400;
+    }
+}

@@ -53,6 +53,8 @@
 td {
     text-align: left;
     width: 20vw;
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
 }
 
 .email-input {
@@ -85,6 +87,10 @@ td {
     cursor: pointer;
 }
 
+a {
+    cursor: pointer;
+}
+
 .social-icon-background {
     background-color: #FFBE1D; 
     border-radius: 50%; 
@@ -92,4 +98,47 @@ td {
     margin-left: 0.5vw;
     margin-right: 0.5vw;
     cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .top-div {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+    }
+    .top-left-div {
+        float: left;
+        padding-left: 0;
+        padding-right: 30vw;
+    }
+    .outer-div {
+        height: auto;
+        padding: 5vh 0vw 2vh 14vw;
+        justify-content: flex-start;
+    }
+    .top-right-div {
+        padding-top: 4vh;
+    }
+    td {
+        width: 30vw;
+    }
+    .bottom-div {
+        flex-direction: column; 
+    }
+    .description {
+        padding-top: 5vh;
+        max-width: 65vw;
+    }
+    .email-input {
+        width: 35vw;
+    }
+    .download-icon {
+        width: 35vw;
+        height: 17vw;
+    }
+    .social-icon-background {
+        padding: 2vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+    }
 }

@@ -36,3 +36,17 @@
     margin-top: 2vh;
     padding:3.5vh 4vw 3.5vh 4vw  !important;
 }
+
+@media (max-width: 450px) {
+    .heading {
+        font-size: 30px;
+    }
+    .centered {
+        top: 30%
+    }
+    .button {
+        font-size: 18px;
+        margin-top: 2vh;
+        padding:3.5vh 8vw 3.5vh 8vw  !important;
+    }
+}
