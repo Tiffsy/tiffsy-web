@@ -25,3 +25,12 @@
     max-width: 16vw;
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    .image {
+        width: 50vw;
+    }
+    .description {
+        max-width: 50vw;
+    }
+}
