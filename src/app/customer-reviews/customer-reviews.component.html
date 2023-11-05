@@ -3,7 +3,7 @@
     <div class="scroll-button pull-left">
         <mat-icon (click)="scrollLeft()">keyboard_arrow_left</mat-icon>
     </div>  
-    <div #widgetsContent class="custom-slider-main" style="padding-top: 5vh; padding-bottom: 5vh;">
+    <div #widgetsContent class="custom-slider-main" [style.max-width.px] = "maxWidth">
         <ng-container *ngFor="let customer of customerList">
             <app-customer-review-card 
                 image_name="{{customer.imageName}}" 

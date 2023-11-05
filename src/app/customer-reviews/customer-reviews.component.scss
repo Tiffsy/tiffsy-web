@@ -5,6 +5,8 @@
     flex-direction: row; 
     justify-content: flex-start; 
     // width: 100vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     box-sizing: border-box;
     left: 0
 }
@@ -21,6 +23,7 @@
 
 .scroll-container {
     display: flex;
+    justify-content: center;
     align-items: center; /* Vertically center the buttons with the cards */
     overflow: hidden;
     width: 100%;

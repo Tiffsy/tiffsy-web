@@ -12,6 +12,8 @@ export class CustomerReviewsComponent implements OnInit {
   cardWidth!: number;
   marginWidth!: number; 
   scrollDistance!: number;
+  numberOfCards!: number;
+  maxWidth!: number;
   customerList: CustomerReview[] = [
     {
       imageName: 'customer_img_1.png',
@@ -57,6 +59,15 @@ export class CustomerReviewsComponent implements OnInit {
       food delivery experience of Tiffsy services. Quoted paragraph
       as told by the customer regarding food delivery experience
       ofTiffsy services.`
+    },
+    {
+      imageName: 'customer_img_3.png',
+      customerName: 'Nikhil Agrawal',
+      designation: 'Cricket Coach in Pune',
+      review: `Quoted paragraph as told by the customer regarding
+      food delivery experience of Tiffsy services. Quoted paragraph
+      as told by the customer regarding food delivery experience
+      ofTiffsy services.`
     }
   ];
 
@@ -67,18 +78,34 @@ export class CustomerReviewsComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
+    this.calculateOptimalNumberOfCards();
     this.calculateScrollDistance();
   }
 
   @HostListener('window:resize', ['$event'])
   onWindowResize(event: Event): void {
+    this.maxWidth = window.innerWidth;
+    this.cdr.detectChanges();
+    this.calculateOptimalNumberOfCards();
     this.calculateScrollDistance();
   }
 
-  calculateScrollDistance(): void {
+  calculateOptimalNumberOfCards(): void {
     this.cardWidth = this.widgetsContent.nativeElement.querySelector('app-customer-review-card').offsetWidth;
-    this.marginWidth = 6; 
-    this.scrollDistance = (this.cardWidth + this.marginWidth * window.innerWidth) * 3;
+    const cardsDivWidth = document.querySelector('.custom-slider-main')!.clientWidth;
+    this.numberOfCards = cardsDivWidth / this.cardWidth;
+    console.log("cc" + this.numberOfCards);
+    if (this.numberOfCards % 1 > 0.92) {
+      this.numberOfCards = Math.ceil(this.numberOfCards);
+    } else {
+      this.numberOfCards = Math.floor(this.numberOfCards);
+    }
+    this.maxWidth = this.numberOfCards * this.cardWidth;
+    this.cdr.detectChanges();
+  }
+
+  calculateScrollDistance(): void {
+    this.scrollDistance = this.cardWidth * this.numberOfCards;
   }
 
 
