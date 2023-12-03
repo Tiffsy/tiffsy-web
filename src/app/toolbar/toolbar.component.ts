@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from "@angular/platform-browser";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -10,11 +11,16 @@ import { DomSanitizer } from "@angular/platform-browser";
 export class ToolbarComponent {
   constructor(
     private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer
+    private domSanitizer: DomSanitizer,
+    private router: Router
   ){
     this.matIconRegistry.addSvgIcon(
       "tiffsy",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/app-icon.svg")
     );
+  }
+
+  directToLogin() : void {
+    this.router.navigate(['/login']);
   }
 }

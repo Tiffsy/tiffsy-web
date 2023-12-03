@@ -20,6 +20,7 @@ import { OrderNowHomepageComponent } from './order-now-homepage/order-now-homepa
 import { FooterComponent } from './footer/footer.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { AppGuideDashboardComponent } from './app-guide-dashboard/app-guide-dashboard.component';
+import { LoginSignupComponent } from './login-signup/login-signup.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AppGuideDashboardComponent } from './app-guide-dashboard/app-guide-dash
     OrderNowHomepageComponent,
     FooterComponent,
     BottomBarComponent,
-    AppGuideDashboardComponent
+    AppGuideDashboardComponent,
+    LoginSignupComponent
   ],
   imports: [
     BrowserModule,
