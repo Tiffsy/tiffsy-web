@@ -1,13 +1,15 @@
+
+
 .outer-div {
-    background-color: #FFFAEC;;
-    height: 60vh;
-    width: 100vw;
-    display: flex; 
-    flex-direction: column; 
+    background-color: #FFFAEC;
+    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 12vh 0vw 5vh 10vw;
+    padding: 12vh 0vw 5vh 9vw;
 }
+
 
 .top-div {
     display: flex; 
@@ -112,7 +114,6 @@ a {
         padding-right: 25vw;
     }
     .outer-div {
-        height: auto;
         padding: 5vh 0vw 2vh 14vw;
         justify-content: flex-start;
     }
