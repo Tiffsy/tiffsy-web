@@ -1,124 +1,166 @@
 .main-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Equal width for both columns */
-    place-items: center;
-    margin-top: 50px;
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-bottom: 90px;
-    
-  }
-  
-  .heading {
-    font-family: 'Merriweather'; 
-    font-size: xx-large; 
-    font-weight: bold;
-    padding: 5px;
-    margin-bottom: 35px;
-    width: 306px;
-    height: 50px;
-    font-weight:bold;
-    
-    
-  }
-  
-  .separator-container {
-    text-align: center; /* Center the content within the container */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin-top: 3vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 7vh;
+}
+
+.heading {
+  font-family: 'Merriweather';
+  font-size: 2.3vw;
+  font-weight: bold;
+  padding: 1vh;
+  margin-bottom: 4vh;
+  width: 25vw;
+  height: 4.5vh;
+  font-weight: bold;
+  margin-bottom: 8vh;
+}
+
+.separator-container {
+  text-align: center;
 }
 
 .separator {
-    border-top: 2px solid #ccc;
-    margin: 20px 0;
-    width: 248px;
-    display: inline-block; /* Make the separator an inline block */
-    vertical-align: middle; /* Adjust vertical alignment */
+  border-top: 0.2vh solid #ccc;
+  margin: 3vh 0;
+  width: 15vw;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .sep-or {
-    background-color: white;
-    margin: 20px; /* Adjust the margin as needed */
-    display: inline-block; /* Make the span an inline block */
-    vertical-align: middle; /* Adjust vertical alignment */
-    font-weight: bold;
-    font-size: 17px;
+  background-color: white;
+  margin: 2.5vh;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 1.2vw;
 }
 
-  
-  .combined-input {
-    display: flex;
-  
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 56px;
-    width: 560px;
-  }
-
-  input:focus {
-    outline: none; /* Remove the default focus outline */
-    box-shadow: none; /* Remove any box shadow */
+.combined-input {
+  display: flex;
+  align-items: center;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.7vw;
+  overflow: hidden;
+  height: 6vh;
+  width: 35vw;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-size: 1.4vw;
 }
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 select:focus {
-  outline: none; /* Remove the default focus outline */
-  box-shadow: none; /* Remove any box shadow */
+  outline: none;
+  box-shadow: none;
 }
 
+.combined-input select {
+  border: none;
+  padding-left: 0.3vw;
+  box-sizing: border-box;
+ 
+ 
+}
 
-  
-  .combined-input select{
-    
-    border: none;
-    padding-left: 3px;
-    box-sizing: border-box;
-    font-size: 17px;
+.combined-input input {
+  border: none;
+  padding: 0.8vw;
+  box-sizing: border-box;
+ 
+}
+
+.custom-select {
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.custom-input {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.btn {
+  height: 6vh;
+  width: 35vw;
+  padding: 1.6vh 6vw 1.6vh 6vw;
+  margin-top: 3.5vh;
+  margin-bottom: 3.5vh;
+  font-size: 1.1vw;
+  font-weight: bold;
+  border-radius: 0.7vw;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.google-button svg {
+  margin-right: 1vw;
+}
+
+.btn svg {
+  margin-right: 1vw;
+}
+
+.right-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-div img {
+  width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .main-div {
+    grid-template-columns: 1fr;
+    margin-top: 5vh;
   }
-  .combined-input input {
-   
-    border: none;
-    padding: 8px;
-    box-sizing: border-box;
-    font-size: 17px;
+
+  .heading{
+    margin-bottom: 2vh;
+    font-size: 3.7vw;
+    width: 40vw;
   }
-  
-  .custom-select {
-    width: 30%;
-    box-sizing: border-box; /* Include padding and border in the width */
+  .combined-input{
+    font-size: 2.5vw;
   }
-  
-  .custom-input {
-    flex: 1; /* Take up remaining space */
-    box-sizing: border-box; /* Include padding and border in the width */
+
+  .right-div img {
+    width: 70%; 
   }
   .btn{
-    height: 56px;
-    width: 560px;
-    padding: 16px, 60px, 16px, 60px   ;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    font-size: 17px;
-    font-weight: bold;
-    
-    border-radius: 10px;
+    width: 70vw;
+    font-size: 2.6vw;
   }
-  .google-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-   
-    color: black; /* White text */
-    background-color: white;
-   
-   
-    cursor: pointer;
+  .combined-input{
+    width: 70vw; 
+    font-size: 2.5vw;
   }
-  
-  .google-button svg {
-    margin-right: 10px; /* Adjust the margin as needed to separate the SVG from text */
+  .separator{
+    width: 29vw;
   }
-  
-  
-  .btn svg {
-    margin-right: 10px; /* Adjust the margin as needed to separate the SVG from text */
+  .sep-or {
+    font-size: 2.5vw;
   }
+  .help-icon{
+    height: 3vh;
+  }
+}
