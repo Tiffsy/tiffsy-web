@@ -91,7 +91,10 @@ td {
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
+
 
 .social-icon-background {
     background-color: #FFBE1D; 
@@ -101,6 +104,7 @@ a {
     margin-right: 0.5vw;
     cursor: pointer;
 }
+
 
 @media (max-width: 480px) {
     .top-div {
