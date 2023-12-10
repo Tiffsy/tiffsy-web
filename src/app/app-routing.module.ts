@@ -6,6 +6,7 @@ import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginSignupComponent},
+  {path:'dashboard',component: DashboardComponent},
   {path: '', component: DashboardComponent},
   {path: 'faq' ,component: FaqComponent}
 ];

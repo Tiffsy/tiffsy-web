@@ -128,6 +128,12 @@ select:focus {
   width: 100%; 
 }
 
+// .google-button:hover {
+//   background-color: yellow;
+//   // Add any additional styling for the clicked state
+// }
+
+
 @media (max-width: 768px) {
   .main-div {
     grid-template-columns: 1fr;
