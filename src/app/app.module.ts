@@ -25,6 +25,7 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { AppGuideDashboardComponent } from './app-guide-dashboard/app-guide-dashboard.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { FaqComponent } from './faq/faq.component';
+import {  GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { FaqComponent } from './faq/faq.component';
     MatToolbarModule,
     MatIconModule,
     HttpClientModule,
-    SocialLoginModule
+    SocialLoginModule,
+    GoogleSigninButtonModule
   ],
   providers: [
     {

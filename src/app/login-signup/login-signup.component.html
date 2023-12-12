@@ -24,10 +24,15 @@
       
 
     <div>
-      <button class="btn google-button" (click)="signInWithGoogle()"  >
-        <mat-icon class="" svgIcon="google"></mat-icon>
-        <span style="margin-left: 1%;">Continue with Google Account</span>
-      </button>
+      
+        <button class="btn google-button" (click)="signInWithGoogle()"  >
+          <asl-google-signin-button type="standard" size="large"> 
+          </asl-google-signin-button>
+          <!-- <mat-icon class="" svgIcon="google"></mat-icon>
+          <span style="margin-left: 1%;">Continue with Google Account</span> -->
+        </button>
+      
+      
     </div>
     
     
