@@ -26,6 +26,7 @@ import { AppGuideDashboardComponent } from './app-guide-dashboard/app-guide-dash
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { FaqComponent } from './faq/faq.component';
 import {  GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
+import { DownloadAppComponent } from './download-app/download-app.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {  GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
     BottomBarComponent,
     AppGuideDashboardComponent,
     LoginSignupComponent,
-    FaqComponent
+    FaqComponent,
+    DownloadAppComponent
   ],
   imports: [
     BrowserModule,
