@@ -1,0 +1,73 @@
+.parent-div {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    padding-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    min-width: 280px;
+    min-height: 280px;
+}
+
+.colored-div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    background-color: #E1EDDC;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    padding-bottom:5vh;
+}
+
+.customer-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 30%;
+    max-width: 100%;
+    display: block;
+}
+
+.title{
+    font-family:'Inter';
+    font-size: medium; 
+    padding-top: 6vw;
+    font-weight: 600;
+}
+
+.designation{
+    font-family:'Inter';
+    font-size: small; 
+    font-weight: 400;
+}
+
+.quote {
+    padding: 1vw;
+}
+
+.review {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family:'Inter';
+    font-size: small; 
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 890px) and (min-width: 520px) {
+    .title {
+        padding-top: 9vw;
+    }
+}
+
+@media (max-width: 520px) {
+    .title {
+        padding-top: 12.5vw;
+    }
+}

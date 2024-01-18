@@ -1,0 +1,27 @@
+.toolbar {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    font-family: 'Inter';
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 6vh;
+}
+
+.toolbar-button {
+    color: #474747;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .toolbar-button {
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
