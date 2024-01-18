@@ -1,0 +1,92 @@
+.section {
+    height:35vw;
+    width: 100vw;
+    max-width: 100vw;
+    background-color: #FFBE1D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: 'Merriweather'; 
+    font-size: xx-large; 
+    font-weight: bold;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    padding-left: 2vw;
+    max-width: 36vw;
+}
+
+.mockup-top {
+    position: absolute;
+    right: 30vw;
+    margin-top: 0; 
+    width: 24vw; 
+    height: auto;
+}
+
+.mockup-bottom {
+    position: absolute; 
+    bottom: 0; 
+    right: 5vw;
+    margin-top: auto;
+    width: 24vw; 
+    height: auto;
+}
+
+.download-icons-div {
+    display: flex; 
+    flex-direction: row; 
+    justify-content:space-between;
+    width: 100%;
+}
+
+.download-icon {
+    width: 13vw; 
+    height: auto;
+}
+
+.content {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    max-width: 32vw;
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-family: 'Merriweather'; 
+        font-size: 15px; 
+        font-weight: bold;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 12vw;
+        width: 45vw;
+        max-width: 55vw;
+    }
+    .section {
+        height: 45vw;
+    }
+    .download-icon {
+        height: auto;
+        width: 25vw;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    }
+    .download-icons-div {
+        flex-direction: column;
+    }
+    .mockup-top {
+        right: 25vw;
+    }
+    
+    .mockup-bottom {
+        right: 3vw;
+    }
+}

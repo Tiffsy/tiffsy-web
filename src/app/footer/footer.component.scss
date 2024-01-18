@@ -1,0 +1,144 @@
+.outer-div {
+    background-color: #FFFAEC;;
+    height: 60vh;
+    width: 100vw;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    padding: 12vh 0vw 5vh 10vw;
+}
+
+.top-div {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.bottom-div {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    max-width: 80vw;
+}
+
+.top-left-div {
+    float: right;
+    padding-left: 5vw;
+}
+.top-right-div {
+    float: left;
+    margin-right: 6vw;
+}
+.bottom-left-div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+.app-icon-background {
+    width: 150px;
+    height: 150px;
+    background-color: #FFBE1D; 
+    border-radius: 50%; 
+}
+
+.description {
+    font-family:'Inter';
+    font-size: 15px; 
+    font-weight: 400;
+    max-width: 19vw;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+td {
+    text-align: left;
+    width: 20vw;
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+}
+
+.email-input {
+    background-color: #FFFAEC;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-bottom: 10.5px;
+    border-color: #A6A6A6;
+    border-right-color: #FFBE1D;
+    width: 13vw;
+    padding-left: 1vw;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.mat-mdc-unelevated-button:not(:disabled) {
+    border-radius: 0 4px 4px 0;
+}
+
+.bottom-left-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-icon {
+    width: 9vw;
+    height: 2.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+.social-icon-background {
+    background-color: #FFBE1D; 
+    border-radius: 50%; 
+    padding: 0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .top-div {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+    }
+    .top-left-div {
+        float: left;
+        padding-left: 5vw;
+        padding-right: 25vw;
+    }
+    .outer-div {
+        height: auto;
+        padding: 5vh 0vw 2vh 14vw;
+        justify-content: flex-start;
+    }
+    .top-right-div {
+        padding-top: 4vh;
+    }
+    td {
+        width: 30vw;
+    }
+    .bottom-div {
+        flex-direction: column; 
+    }
+    .description {
+        padding-top: 5vh;
+        max-width: 65vw;
+    }
+    .email-input {
+        width: 35vw;
+    }
+    .download-icon {
+        width: 35vw;
+        height: 17vw;
+    }
+    .social-icon-background {
+        padding: 2vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+    }
+}
