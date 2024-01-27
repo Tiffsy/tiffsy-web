@@ -3,11 +3,11 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-download-tiffsy',
-  templateUrl: './download-tiffsy.component.html',
-  styleUrls: ['./download-tiffsy.component.scss']
+  selector: 'app-download-app',
+  templateUrl: './download-app.component.html',
+  styleUrls: ['./download-app.component.scss']
 })
-export class DownloadTiffsyComponent {
+export class DownloadAppComponent {
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer

@@ -1,29 +1,44 @@
-<div style="overflow: hidden;">
-    <div class="main-div">
-        <div class="left-div">
-            <div class="heading">
-                Log in or Sign up
-            </div>
-            <div>
-                <select>
-                    <option value="+1">+1 (USA)</option>
-                    <option value="+44">+44 (UK)</option>
-                </select>
-                <input type="text" placeholder="Enter phone number">
-            </div>
-            <div>
-                <button mat-flat-button color="primary">Continue</button>
-            </div>
-            <div class="separator">
-                <span>or</span>
-            </div>
-            <div>
-                <button>Continue with Google Account</button>
-            </div>
-
+     
+<div class="main-div">
+    <div class="left-div">
+        <div class="heading">
+            Log in or Sign up
+        </div>
+        <div class="combined-input">
+            <select class="custom-select" style="width: 100px;height:auto">
+                <option value="+1"> (USA) +1</option>
+                <option value="+44"> (UK) +44</option>
+              </select>
+              <input type="text" placeholder="Enter phone number" class="custom-input" > <mat-icon class="help-icon" svgIcon="help" style="margin-right: 1vw;"></mat-icon>
         </div>
         <div>
-            <img src="../../assets/images/Eating-healthy.png">
+            <button mat-flat-button  class="btn" color="primary"  style="background: #FFBE1D;border: none;
+            ">Continue</button>
         </div>
+       
+        <div class="separator-container">
+          <div class="separator"></div>
+          <span class="sep-or">or</span>
+          <div class="separator"></div>
+      </div>
+      
+
+    <div>
+      
+        <button class="btn google-button" (click)="signInWithGoogle()"  >
+          <asl-google-signin-button type="standard" size="large"> 
+          </asl-google-signin-button>
+          <!-- <mat-icon class="" svgIcon="google"></mat-icon>
+          <span style="margin-left: 1%;">Continue with Google Account</span> -->
+        </button>
+      
+      
+    </div>
+    
+    
+
+    </div>
+    <div class="right-div" >
+        <img src="../../assets/images/Eating-healthy.png">
     </div>
 </div>
