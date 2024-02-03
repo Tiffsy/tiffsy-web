@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import {
+  GoogleLoginProvider
+} from '@abacritt/angularx-social-login';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,6 +24,10 @@ import { FooterComponent } from './footer/footer.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { AppGuideDashboardComponent } from './app-guide-dashboard/app-guide-dashboard.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
+import { FaqComponent } from './faq/faq.component';
+import {  GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
+import { DownloadAppComponent } from './download-app/download-app.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,10 @@ import { LoginSignupComponent } from './login-signup/login-signup.component';
     FooterComponent,
     BottomBarComponent,
     AppGuideDashboardComponent,
-    LoginSignupComponent
+    LoginSignupComponent,
+    FaqComponent,
+    DownloadAppComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +56,32 @@ import { LoginSignupComponent } from './login-signup/login-signup.component';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    SocialLoginModule,
+    GoogleSigninButtonModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '304099809323-il1vn4lee9582cmgsrqvpl0h1rf5rrfa.apps.googleusercontent.com',
+              {
+                oneTapEnabled:false
+              },
+            )
+          }
+        ],
+        onError: (err) => {
+          console.error(err);
+        }
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,97 @@
+.section {
+    height: 90vh;
+    max-width: 100vw;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: 'Merriweather'; 
+    font-size: xx-large; 
+    font-weight: bold;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    padding-left: 2vw;
+    max-width: 36vw;
+}
+
+.mockup-top {
+    position: absolute;
+    right: 30vw;
+    margin-top: 0; 
+    width: 24vw; 
+    height: auto;
+}
+
+.mockup-bottom {
+    position: absolute; 
+    bottom: 0; 
+    right: 5vw;
+    margin-top: auto;
+    width: 24vw; 
+    height: auto;
+}
+
+.download-icons-div {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+.download-icon {
+    width: 13vw; 
+    height: auto;
+}
+
+.content {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    max-width: 32vw;
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-family: 'Merriweather'; 
+        font-size: 5vw; 
+        font-weight: bold;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 12vw;
+        width: 45vw;
+        max-width: 55vw;
+    }
+    
+    .download-icon {
+        height: auto;
+        width: 25vw;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    }
+
+    .download-icons-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mockup-top {
+        right: 25vw;
+    }
+    
+    .mockup-bottom {
+        right: 3vw;
+    }
+
+    .content {
+        max-width: 55vw;
+        align-items: center; /* Center the content horizontally */
+    }
+}
