@@ -1,97 +1,89 @@
 .section {
-    height: 90vh;
+    height: 90%;
     max-width: 100vw;
-    background-color:white;
+    background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 0;
     box-sizing: border-box;
+    overflow-y: hidden;
+}
+.content{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .heading {
-    font-family: 'Merriweather'; 
-    font-size: xx-large; 
+    font-family: 'Merriweather';
+    font-size: 3vw;
     font-weight: bold;
-    padding-top: 5vw;
-    padding-bottom: 3vw;
-    padding-left: 2vw;
-    max-width: 36vw;
-}
-
-.mockup-top {
-    position: absolute;
-    right: 30vw;
-    margin-top: 0; 
-    width: 24vw; 
-    height: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    max-width: 60vw;
+    //text-align: center;
 }
 
 .mockup-bottom {
-    position: absolute; 
-    bottom: 0; 
-    right: 5vw;
-    margin-top: auto;
-    width: 24vw; 
-    height: auto;
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .download-icons-div {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
+    margin-top: 2vh;
+}
+
+.phone {
+    margin-top: auto;
+    align-self: center;
 }
 
 .download-icon {
-    width: 13vw; 
+    width: 13vw;
     height: auto;
 }
 
-.content {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    max-width: 32vw;
-}
-
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
+    /* Your existing styles for larger screens */
+    
     .heading {
-        font-family: 'Merriweather'; 
-        font-size: 5vw; 
-        font-weight: bold;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        padding-left: 12vw;
-        width: 45vw;
-        max-width: 55vw;
-    }
-    
-    .download-icon {
-        height: auto;
-        width: 25vw;
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
+        font-size: 5vw;
     }
 
-    .download-icons-div {
+    .section {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .mockup-top {
-        right: 25vw;
-    }
-    
-    .mockup-bottom {
-        right: 3vw;
+        height: 91.2vh;
+      
     }
 
     .content {
-        max-width: 55vw;
-        align-items: center; /* Center the content horizontally */
+        max-width: 50vw;
+        height: 60vh;
+    }
+
+    .mockup-bottom {
+        max-width: 90vw;
+        height: 56%;
+    }
+
+    .mockup-bottom {
+        margin-top: 0;
+    }
+
+    .download-icon {
+        width: 23vw;
     }
 }
