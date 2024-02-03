@@ -20,7 +20,7 @@ export class ToolbarComponent {
     );
   }
 
-  directToContact() : void {
-    this.router.navigate(['/contact']);
+  directToLogin() : void {
+    this.router.navigate(['/login']);
   }
 }

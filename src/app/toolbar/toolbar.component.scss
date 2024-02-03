@@ -1,77 +1,70 @@
 .toolbar {
-    display: flex;
-    align-items: center; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
     font-family: 'Inter';
     padding-left: 2vw;
     padding-right: 2vw;
-  }
-  
-  .center-icon {
-    flex: 1; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-  
-  .toolbar-icon {
+}
+
+.toolbar-icon {
     transform: scale(2.7);
-  }
-  
-  .contact-button {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-  }
-  
-  .toolbar-button-right {
-    margin-left: 2vw;
+}
+.toolbar-button-left {
+    margin-right: 2vw;
+}
+
+.toolbar-button-right {
+    margin-left: 2vw; 
+}
+
+.login-button {
     border: 2px solid black !important;
-  }
-  
-  @media (max-width: 300px) {
+}
+
+@media (max-width: 300px) {
     .toolbar {
-      padding-left: 0vw;
-      padding-right: 0vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
     }
     .toolbar-icon {
-      transform: scale(1.5);
+        transform: scale(1.5);
     }
     .toolbar-button-left {
-      margin-right: 0vw;
-      font-size: 10px;
+        margin-right: 0vw;
+        font-size: 10px;
     }
-  
+    
     .toolbar-button-right {
-      margin-left: -1vw;
-      font-size: 10px;
+        margin-left: -1vw; 
+        font-size: 10px;
     }
     .login-button {
-      border: 1px solid black !important;
-      margin-right: 1vw !important;
-      size: 5;
+        border: 1px solid black !important;
+        margin-right: 1vw !important;
+        size: 5;
     }
-  }
-  
-  @media (max-width: 480px) and (min-width: 301px) {
+}
+
+@media (max-width: 480px) and (min-width: 301px) {
     .toolbar {
-      padding-left: 0vw;
-      padding-right: 0vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
     }
     .toolbar-icon {
-      transform: scale(1.5);
+        transform: scale(1.5);
     }
     .toolbar-button-left {
-      margin-right: 0vw;
-      font-size: 14px;
+        margin-right: 0vw;
+        font-size: 14px;
     }
-  
+    
     .toolbar-button-right {
-      margin-left: 0vw;
-      font-size: 14px;
+        margin-left: 0vw; 
+        font-size: 14px;
     }
     .login-button {
-      border: 1px solid black !important;
-      margin-right: 2vw !important;
+        border: 1px solid black !important;
+        margin-right: 2vw !important;
     }
-  }
-  
+}
