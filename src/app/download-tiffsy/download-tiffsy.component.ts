@@ -14,11 +14,11 @@ export class DownloadTiffsyComponent {
   ){
     this.matIconRegistry.addSvgIcon(
       "app-store",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/icons/app_store.svg")
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/app_store.svg")
     );
     this.matIconRegistry.addSvgIcon(
       "google-play",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/icons/google_play.svg")
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/google_play.svg")
     );
   }
 }
